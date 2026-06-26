@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="2-WASH لتلميع ووقاية السيارات — خدمة متنقلة تغطي جميع مناطق الكويت. أكثر من 18 سنة خبرة."/>
+  <title>2-WASH | غسيل وتلميع السيارات — الكويت</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Righteous&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ===================== LOADER ===================== -->
+<div class="loader" id="loader">
+  <div class="loader-logo">
+    <div class="loader-bubble"></div>
+    <span>2-WASH</span>
+  </div>
+  <div class="loader-bar"><div class="loader-fill"></div></div>
+</div>
+
+<!-- ===================== NAVBAR ===================== -->
+<header class="navbar" id="navbar">
+  <div class="nav-container">
+
+    <!-- Logo -->
+    <a href="#home" class="nav-logo">
+      <img src="logo.png" alt="2-WASH Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"/>
+      <div class="logo-fallback" style="display:none">
+        <span class="lf-2">2</span><span class="lf-dash">-</span><span class="lf-wash">WASH</span>
+      </div>
+    </a>
+
+    <!-- Desktop Nav -->
+    <nav class="nav-links" id="navLinks">
+      <a href="#home"         class="nav-a active">الرئيسية</a>
+      <a href="#services"     class="nav-a">الخدمات</a>
+      <a href="#offers"       class="nav-a">العروض</a>
+      <a href="#pricing"      class="nav-a">الأسعار</a>
+      <a href="#about"        class="nav-a">من نحن</a>
+      <a href="#contact"      class="nav-a">تواصل</a>
+    </nav>
+
+    <!-- CTA buttons -->
+    <div class="nav-ctas">
+<a href="tel:65942120" class="btn-call">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+        اتصل الآن
+      </a>
+      <a href="https://wa.me/96565942120" target="_blank" class="btn-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+        واتساب
+      </a>
+    </div>
+
+    <!-- Burger -->
+    <button class="burger" id="burger" aria-label="القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mob-drawer" id="mobDrawer">
+    <a href="#home"      class="md-link">🏠 الرئيسية</a>
+    <a href="#services"  class="md-link">🔧 الخدمات</a>
+    <a href="#offers"    class="md-link">🎁 العروض</a>
+    <a href="#pricing"   class="md-link">💰 الأسعار</a>
+    <a href="#about"     class="md-link">ℹ️ من نحن</a>
+    <a href="#contact"   class="md-link">📞 تواصل</a>
+    <div class="md-ctas">
+<a href="tel:65942120"                 class="btn-call">اتصل الآن</a>
+      <a href="https://wa.me/96565942120" target="_blank" class="btn-wa">واتساب</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <!-- Animated BG -->
+  <div class="hero-bg">
+    <div class="hbg-wave wave1"></div>
+    <div class="hbg-wave wave2"></div>
+    <div class="hbg-bubble b1"></div>
+    <div class="hbg-bubble b2"></div>
+    <div class="hbg-bubble b3"></div>
+    <div class="hbg-bubble b4"></div>
+    <div class="hbg-bubble b5"></div>
+    <div class="hbg-dots"></div>
+  </div>
+
+  <div class="hero-inner container">
+    <!-- Text side -->
+    <div class="hero-text" data-aos="right">
+      <div class="hero-badge">
+        <span class="hb-dot"></span>
+        <span>خدمة متنقلة — الكويت 🇰🇼</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="ht-line1">لمعة الوكالة</span>
+        <span class="ht-line2">تـرجـع لـك</span>
+      </h1>
+
+      <p class="hero-sub">
+        أكثر من <strong>18 سنة خبرة</strong> في غسيل وتلميع السيارات بمواد إيطالية عالية الجودة.
+        <br/>اتصل نصل — خدمة عند باب بيتك و مقر عملك في جميع مناطق الكويت.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#offers" class="cta-primary">شاهد العروض</a>
+<a href="tel:65942120" class="cta-secondary">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          65942120
+        </a>
+      </div>
+
+      <!-- Tags -->
+      <div class="hero-tags">
+        <span class="htag">✨ مواد إيطالية</span>
+        <span class="htag">🚗 خدمة متنقلة</span>
+        <span class="htag">🛡️ نانو سيراميك</span>
+        <span class="htag">⭐ 18 سنة خبرة</span>
+      </div>
+    </div>
+
+    <!-- Visual side -->
+    <div class="hero-visual" data-aos="left">
+      <!-- Big logo display -->
+      <div class="hero-logo-card">
+        <div class="hlc-glow"></div>
+        <img src="logo.png" alt="2-WASH" class="hlc-logo" onerror="this.outerHTML='<div class=hlc-text-logo><span>2</span>-<span>WASH</span></div>'"/>
+        <div class="hlc-tagline">carwash · detailing · oil change</div>
+        <!-- Stats -->
+        <div class="hlc-stats">
+          <div class="hls-item">
+            <strong class="count-up" data-target="18">0</strong><span>+</span>
+            <small>سنة خبرة</small>
+          </div>
+          <div class="hls-sep"></div>
+          <div class="hls-item">
+            <strong class="count-up" data-target="5000">0</strong><span>+</span>
+            <small>سيارة نظّفناها</small>
+          </div>
+          <div class="hls-sep"></div>
+          <div class="hls-item">
+            <strong>100%</strong>
+            <small>ضمان الجودة</small>
+          </div>
+        </div>
+        <!-- Water drops animation -->
+        <div class="hlc-drops">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <!-- Floating bubbles tags -->
+      <div class="hero-float f1">🧴 مواد إيطالية</div>
+      <div class="hero-float f2">📍 حولي – الكويت</div>
+      <div class="hero-float f3">⏰ 10ص – 12م</div>
+    </div>
+  </div>
+
+  <!-- Scroll arrow -->
+  <div class="scroll-arrow">
+    <span></span><span></span>
+    <p>اكتشف أكثر</p>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head" data-aos="up">
+      <span class="sec-tag">خدماتنا</span>
+      <h2>كل ما تحتاجه <span class="sky-text">لسيارة متألقة</span></h2>
+      <p>باقة متكاملة من خدمات العناية بسيارتك بأعلى معايير الجودة</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Wash -->
+      <div class="srv-card" data-aos="up" data-aos-delay="0">
+        <div class="srv-icon-wrap">
+          <div class="srv-icon" style="--ic:#29b6f6">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 30c0-8 7-14 16-14s16 6 16 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M4 34h40M14 34v4M34 34v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 16V8M18 10l6-4 6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="16" cy="22" r="2" fill="currentColor" opacity="0.4"/>
+              <circle cx="24" cy="19" r="2" fill="currentColor" opacity="0.4"/>
+              <circle cx="32" cy="22" r="2" fill="currentColor" opacity="0.4"/>
+            </svg>
+          </div>
+        </div>
+        <h3>غسيل السيارات</h3>
+        <p>ثلاثة خيارات لغسيل سيارتك</p>
+        <ul>
+          <li>✓ غسيل عادي</li>
+          <li>✓ غسيل سوبر</li>
+          <li>✓ غسيل VIP</li>
+        </ul>
+        <div class="srv-price">يبدأ من <strong>5 د.ك</strong></div>
+      </div>
+
+      <!-- Polish -->
+      <div class="srv-card featured-card" data-aos="up" data-aos-delay="80">
+        <div class="fc-badge">الأكثر طلباً</div>
+        <div class="srv-icon-wrap">
+          <div class="srv-icon" style="--ic:#ff8f00">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="24" cy="24" r="7" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 10v4M24 34v4M10 24h4M34 24h4M15.5 15.5l2.8 2.8M29.7 29.7l2.8 2.8M15.5 32.5l2.8-2.8M29.7 18.3l2.8-2.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <h3>التلميع</h3>
+        <p>تلميع احترافي بمواد إيطالية عالية الجودة</p>
+        <ul>
+          <li>✓ تلميع داخلي</li>
+          <li>✓ تلميع خارجي</li>
+          <li>✓ تلميع يدوي وماكينة</li>
+          <li>✓ تلميع الأضواء الأمامية</li>
+        </ul>
+        <div class="srv-price">يبدأ من <strong>20 د.ك</strong></div>
+      </div>
+
+      <!-- Engine -->
+      <div class="srv-card" data-aos="up" data-aos-delay="160">
+        <div class="srv-icon-wrap">
+          <div class="srv-icon" style="--ic:#66bb6a">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="18" width="32" height="20" rx="4" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M16 18V14M32 18V14M8 28h4M36 28h4M20 28h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="24" cy="28" r="3" stroke="currentColor" stroke-width="2"/>
+              <path d="M14 14h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <h3>غسيل المحرك</h3>
+        <p>تنظيف وتلميع المكينة بمواد خاصة وآمنة</p>
+        <ul>
+          <li>✓ غسيل وتلميع المكينة</li>
+          <li>✓ إزالة الزيوت والأوساخ</li>
+          <li>✓ آمن على جميع المحركات</li>
+        </ul>
+        <div class="srv-price"><strong>5 د.ك</strong></div>
+      </div>
+
+      <!-- Nano -->
+      <div class="srv-card" data-aos="up" data-aos-delay="240">
+        <div class="srv-icon-wrap">
+          <div class="srv-icon" style="--ic:#7e57c2">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6C14 6 8 14 8 22c0 10 8 16 16 20 8-4 16-10 16-20 0-8-6-16-16-16z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M18 24l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="24" cy="14" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+        </div>
+        <h3>نانو سيراميك</h3>
+        <p>حماية فائقة للطلاء تدوم لسنوات</p>
+        <ul>
+          <li>✓ حماية نانو سيراميك</li>
+          <li>✓ مقاومة الخدوش الطفيفة</li>
+          <li>✓ ضمان طويل الأمد</li>
+        </ul>
+        <div class="srv-price">سعر حسب الحجم</div>
+      </div>
+
+      <!-- Extra Services -->
+      <div class="srv-card" data-aos="up" data-aos-delay="320">
+        <div class="srv-icon-wrap">
+          <div class="srv-icon" style="--ic:#ef5350">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 14h24v22a4 4 0 0 1-4 4H16a4 4 0 0 1-4-4V14z" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M8 14h32M20 14v-4h8v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M18 24h12M18 30h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+        <h3>خدمات إضافية</h3>
+        <p>خدمات متكاملة لعناية شاملة بسيارتك</p>
+        <ul>
+          <li>✓ تنظيف المقاعد</li>
+          <li>✓ إزالة البقع</li>
+          <li>✓ تعطير احترافي</li>
+          <li>✓ تعقيم المقصورة</li>
+        </ul>
+        <div class="srv-price">سعر حسب الخدمة</div>
+      </div>
+
+      <!-- Car Spa -->
+      <div class="srv-card" data-aos="up" data-aos-delay="400">
+        <div class="srv-icon-wrap">
+          <div class="srv-icon" style="--ic:#26c6da">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 36c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M24 24V16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M18 10c0 3.314 2.686 6 6 6s6-2.686 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M8 36h32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="16" cy="34" r="2" fill="currentColor" opacity="0.5"/>
+              <circle cx="32" cy="34" r="2" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+        <h3>Car Spa</h3>
+        <p>الخدمة الملكية الشاملة لسيارتك</p>
+        <ul>
+          <li>✓ غسيل شامل كامل</li>
+          <li>✓ تلميع داخلي وخارجي</li>
+          <li>✓ تعطير وتعقيم</li>
+          <li>✓ لمسة نهائية فاخرة</li>
+        </ul>
+        <div class="srv-price">من <strong>50 د.ك</strong></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== OFFERS ===================== -->
+<section class="offers" id="offers">
+  <div class="offers-bg">
+    <div class="ob-wave"></div>
+  </div>
+  <div class="container">
+    <div class="section-head" data-aos="up">
+      <span class="sec-tag" style="--tc:#ff8f00;--tbc:rgba(255,143,0,0.15)">عروضنا</span>
+      <h2>عروض <span class="orange-text">لا تُفوَّت</span></h2>
+      <p>اختر العرض المناسب واستمتع بخدمة احترافية بأفضل الأسعار</p>
+    </div>
+
+    <div class="offers-grid">
+
+      <!-- Offer 1 -->
+      <div class="offer-card" data-aos="up" data-aos-delay="0">
+        <div class="oc-header">
+          <div class="oc-icon">💎</div>
+          <h3>عرض التوفير</h3>
+        </div>
+        <div class="oc-price">
+          <span class="oc-val">15</span>
+          <span class="oc-cur">د.ك</span>
+        </div>
+        <ul class="oc-list">
+          <li>غسيل سوبر</li>
+          <li>تلميع داخلي يدوي</li>
+          <li>تلميع تواير</li>
+          <li>تعطير وتكييس</li>
+        </ul>
+        <a href="https://wa.me/96555226675?text=أريد عرض التوفير 15 د.ك" target="_blank" class="oc-btn">احجز الآن</a>
+      </div>
+
+      <!-- Offer 2 — Featured -->
+      <div class="offer-card offer-featured" data-aos="up" data-aos-delay="100">
+        <div class="of-label">⭐ الأفضل قيمة</div>
+        <div class="oc-header">
+          <div class="oc-icon">👑</div>
+          <h3>عرض VIP</h3>
+        </div>
+        <div class="oc-price">
+          <span class="oc-val">20</span>
+          <span class="oc-cur">د.ك</span>
+        </div>
+        <ul class="oc-list">
+          <li>غسيل VIP</li>
+          <li>تلميع ماكينة خارجي</li>
+          <li>تلميع تواير</li>
+          <li>تعطير وتكييس</li>
+        </ul>
+        <a href="https://wa.me/96555226675?text=أريد عرض VIP 20 د.ك" target="_blank" class="oc-btn oc-btn-featured">احجز الآن</a>
+      </div>
+
+      <!-- Offer 3 -->
+      <div class="offer-card" data-aos="up" data-aos-delay="200">
+        <div class="oc-header">
+          <div class="oc-icon">🛡️</div>
+          <h3>عرض النانو</h3>
+        </div>
+        <div class="oc-price">
+          <span class="oc-val">25</span>
+          <span class="oc-cur">د.ك</span>
+        </div>
+        <ul class="oc-list">
+          <li>غسيل شامل</li>
+          <li>نانو سيراميك</li>
+          <li>تلميع كامل</li>
+          <li>تعطير وتكييس</li>
+        </ul>
+        <a href="https://wa.me/96555226675?text=أريد عرض النانو 25 د.ك" target="_blank" class="oc-btn">احجز الآن</a>
+      </div>
+
+      <!-- Offer 4 -->
+      <div class="offer-card" data-aos="up" data-aos-delay="300">
+        <div class="oc-header">
+          <div class="oc-icon">✨</div>
+          <h3>التلميع الشامل</h3>
+        </div>
+        <div class="oc-price-custom">
+          <span>السعر حسب حجم السيارة</span>
+        </div>
+        <ul class="oc-list">
+          <li>تلميع داخلي</li>
+          <li>تلميع خارجي</li>
+          <li>غسيل المكينة</li>
+          <li>تشطيب احترافي</li>
+        </ul>
+        <a href="https://wa.me/96555226675?text=أريد عرض التلميع الشامل" target="_blank" class="oc-btn">استفسر الآن</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRICING ===================== -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <div class="section-head" data-aos="up">
+      <span class="sec-tag" style="--tc:#66bb6a;--tbc:rgba(102,187,106,0.15)">الأسعار</span>
+      <h2>أسعار <span class="green-text">شفافة وواضحة</span></h2>
+      <p>لا رسوم مخفية — تعرف على السعر الكامل قبل بدء الخدمة</p>
+    </div>
+
+    <!-- Toggle -->
+    <div class="price-toggle" id="priceToggle">
+      <button class="pt-btn active" data-type="saloon">🚗 صالون</button>
+      <button class="pt-btn" data-type="jeep">🚙 جيب</button>
+    </div>
+
+    <div class="price-table-wrap" data-aos="up">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>الخدمة</th>
+            <th class="price-col" id="priceHeader">صالون</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="pt-category"><td colspan="2">🚿 خدمات الغسيل</td></tr>
+          <tr>
+            <td>غسيل عادي</td>
+            <td class="price-val" data-saloon="5 د.ك" data-jeep="7 د.ك">5 د.ك</td>
+          </tr>
+          <tr>
+            <td>غسيل سوبر</td>
+            <td class="price-val" data-saloon="—" data-jeep="—">—</td>
+          </tr>
+          <tr>
+            <td>غسيل VIP</td>
+            <td class="price-val" data-saloon="—" data-jeep="—">—</td>
+          </tr>
+          <tr class="pt-category"><td colspan="2">✨ خدمات التلميع</td></tr>
+          <tr>
+            <td>تلميع داخلي</td>
+            <td class="price-val" data-saloon="20 د.ك" data-jeep="25 د.ك">20 د.ك</td>
+          </tr>
+          <tr>
+            <td>تلميع خارجي</td>
+            <td class="price-val" data-saloon="20 د.ك" data-jeep="25 د.ك">20 د.ك</td>
+          </tr>
+          <tr>
+            <td>تلميع كامل</td>
+            <td class="price-val" data-saloon="30 د.ك" data-jeep="35 د.ك">30 د.ك</td>
+          </tr>
+          <tr>
+            <td>تلميع الأضواء الأمامية</td>
+            <td class="price-val" data-saloon="4 د.ك" data-jeep="4 د.ك">4 د.ك</td>
+          </tr>
+          <tr class="pt-category"><td colspan="2">🛁 خدمات فاخرة</td></tr>
+          <tr class="pt-highlight">
+            <td>Car Spa</td>
+            <td class="price-val" data-saloon="50 د.ك" data-jeep="55 د.ك">50 د.ك</td>
+          </tr>
+          <tr>
+            <td>غسيل المكينة</td>
+            <td class="price-val" data-saloon="5 د.ك" data-jeep="5 د.ك">5 د.ك</td>
+          </tr>
+          <tr>
+            <td>نانو سيراميك</td>
+            <td class="price-val" data-saloon="حسب الحجم" data-jeep="حسب الحجم">حسب الحجم</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="price-note" data-aos="up">
+      💡 جميع الأسعار تشمل الخدمة المتنقلة في جميع مناطق الكويت — نأتيك أينما كنت
+    </p>
+  </div>
+</section>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+
+      <!-- Visual -->
+      <div class="about-visual" data-aos="right">
+        <div class="av-main-card">
+          <img src="logo.png" alt="2-WASH" class="av-logo" onerror="this.outerHTML='<div class=av-logo-txt>2-WASH</div>'"/>
+          <div class="av-since">
+            <span>منذ</span>
+            <strong>2008</strong>
+          </div>
+        </div>
+        <!-- Mini stats -->
+        <div class="av-stat s1">
+          <span class="avs-icon">🏆</span>
+          <strong>18+</strong>
+          <small>سنة خبرة</small>
+        </div>
+        <div class="av-stat s2">
+          <span class="avs-icon">🇮🇹</span>
+          <strong>100%</strong>
+          <small>مواد إيطالية</small>
+        </div>
+        <div class="av-stat s3">
+          <span class="avs-icon">🗺️</span>
+          <strong>الكويت</strong>
+          <small>تغطية كاملة</small>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content" data-aos="left">
+        <span class="sec-tag">من نحن</span>
+        <h2>أكثر من <span class="sky-text">18 سنة</span> في خدمتكم</h2>
+        <p class="about-p">
+          تأسست شركة <strong>2-WASH</strong> عام 2008 في حولي بالكويت، وعلى مدى أكثر من
+          <strong>18 سنة</strong> أصبحنا الخيار الأول لآلاف العملاء في جميع مناطق الكويت.
+        </p>
+        <p class="about-p">
+          نقدم خدمة متنقلة احترافية نصل إليك في المنزل أو العمل أو أي مكان تختاره.
+          نستخدم أجود <strong>المواد الإيطالية</strong> لضمان أفضل نتائج في التلميع والتنظيف.
+        </p>
+
+        <div class="about-features">
+          <div class="af-item">
+            <div class="af-icon">🚀</div>
+            <div>
+              <h4>خدمة سريعة</h4>
+              <p>نصلك في الوقت المحدد بلا تأخير</p>
+            </div>
+          </div>
+          <div class="af-item">
+            <div class="af-icon">🇮🇹</div>
+            <div>
+              <h4>مواد إيطالية أصلية</h4>
+              <p>نتائج استثنائية مضمونة</p>
+            </div>
+          </div>
+          <div class="af-item">
+            <div class="af-icon">🛡️</div>
+            <div>
+              <h4>ضمان الجودة</h4>
+              <p>غير راضٍ؟ نُعيد الخدمة مجاناً</p>
+            </div>
+          </div>
+          <div class="af-item">
+            <div class="af-icon">📍</div>
+            <div>
+              <h4>تغطية الكويت كاملة</h4>
+              <p>نصل لجميع المناطق</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-phones">
+          <a href="tel:65942120" class="ap-btn">📞 65942120</a>
+          <a href="tel:65942120" class="ap-btn">📞 65942120</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-head" data-aos="up">
+      <span class="sec-tag">آراء العملاء</span>
+      <h2>يتحدث عنا <span class="sky-text">عملاؤنا</span></h2>
+    </div>
+
+    <div class="testi-slider">
+      <div class="testi-track" id="testiTrack">
+
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p>"خدمة ممتازة! السيارة طلعت كأنها جديدة من الوكالة. الفريق محترف جداً وما قصّر في أي شي."</p>
+          <div class="tc-author">
+            <div class="tca-av">أ.م</div>
+            <div><strong>أحمد المطيري</strong><small>الكويت</small></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p>"جربت Car Spa وكانت تجربة استثنائية. السعر مناسب والنتيجة أكثر من ممتازة. أنصح فيهم 100%."</p>
+          <div class="tc-author">
+            <div class="tca-av">ف.ع</div>
+            <div><strong>فهد العجمي</strong><small>حولي</small></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p>"النانو سيراميك غيّر شكل سيارتي كلياً. لمعة لا تُصدق وحماية ممتازة. شكراً 2-WASH!"</p>
+          <div class="tc-author">
+            <div class="tca-av">م.ك</div>
+            <div><strong>محمد الكندري</strong><small>السالمية</small></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p>"أفضل شي إنهم يجون للبيت. وفّرت وقت ومجهود كثير. سيارتي أصبحت تلمع من بعيد!"</p>
+          <div class="tc-author">
+            <div class="tca-av">ن.ص</div>
+            <div><strong>نورة الصباح</strong><small>الجهراء</small></div>
+          </div>
+        </div>
+
+        <div class="testi-card">
+          <div class="tc-stars">★★★★★</div>
+          <p>"تعامل محترم وشغل نظيف. جربت عرض VIP وكان بالضبط حسب الوصف. راح أكرر التجربة."</p>
+          <div class="tc-author">
+            <div class="tca-av">خ.ع</div>
+            <div><strong>خالد العنزي</strong><small>الفروانية</small></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="testi-prev" id="testiPrev">‹</button>
+      <button class="testi-next" id="testiNext">›</button>
+    </div>
+    <div class="testi-dots" id="testiDots"></div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head" data-aos="up">
+      <span class="sec-tag">تواصل معنا</span>
+      <h2>احجز خدمتك <span class="sky-text">الآن</span></h2>
+      <p>فريقنا جاهز لخدمتك — اتصل أو أرسل واتساب وسنصلك في أقرب وقت</p>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info -->
+      <div class="contact-info" data-aos="right">
+
+        <!-- Phone cards -->
+        <a href="tel:65942120" class="ci-card ci-phone">
+          <div class="ci-ico">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="26"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+          </div>
+          <div>
+            <strong>اتصل بنا</strong>
+            <span>65942120</span>
+            <span>65942120</span>
+          </div>
+        </a>
+
+        <a href="https://wa.me/96565942120" target="_blank" class="ci-card ci-wa">
+          <div class="ci-ico">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="26"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </div>
+          <div>
+            <strong>واتساب</strong>
+            <span>65942120</span>
+            <em>أسرع طريقة للتواصل</em>
+          </div>
+        </a>
+
+        <a href="https://instagram.com/2washkw" target="_blank" class="ci-card ci-insta">
+          <div class="ci-ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="26"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <div>
+            <strong>إنستغرام</strong>
+            <span>@2washkw</span>
+            <em>تابعنا لأحدث العروض</em>
+          </div>
+        </a>
+
+        <!-- Info tiles -->
+        <div class="ci-tiles">
+          <div class="ci-tile">
+            <span>📍</span>
+            <div><strong>الموقع</strong><small>حولي — الكويت</small></div>
+          </div>
+          <div class="ci-tile">
+            <span>⏰</span>
+            <div><strong>ساعات العمل</strong><small>10ص — 12م يومياً</small></div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div class="ci-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.2!2d48.003!3d29.337!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjnCsDIwJzEzLjIiTiA0OMKwMDAnMTEuMSJF!5e0!3m2!1sar!2skw!4v1234567890"
+            width="100%" height="180" style="border:0;border-radius:12px;"
+            allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="موقع 2-WASH في حولي الكويت">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="contact-form-wrap" data-aos="left">
+        <form id="bookForm" novalidate>
+          <h3 class="form-title">📋 احجز خدمتك</h3>
+
+          <div class="fg">
+            <label>الاسم الكامل</label>
+            <input type="text" id="bname" placeholder="اسمك" required/>
+            <span class="fe" id="bnameErr"></span>
+          </div>
+          <div class="fg">
+            <label>رقم الهاتف</label>
+            <input type="tel" id="bphone" placeholder="مثال: 55xxxxxx" required/>
+            <span class="fe" id="bphoneErr"></span>
+          </div>
+          <div class="fg">
+            <label>نوع السيارة</label>
+            <select id="bcar">
+              <option value="">اختر نوع السيارة</option>
+              <option>صالون</option>
+              <option>جيب صغير</option>
+              <option>جيب كبير</option>
+              <option>فان / باص</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>الخدمة المطلوبة</label>
+            <select id="bservice">
+              <option value="">اختر الخدمة</option>
+              <optgroup label="الغسيل">
+                <option>غسيل عادي</option>
+                <option>غسيل سوبر</option>
+                <option>غسيل VIP</option>
+              </optgroup>
+              <optgroup label="التلميع">
+                <option>تلميع داخلي</option>
+                <option>تلميع خارجي</option>
+                <option>تلميع كامل</option>
+                <option>تلميع الأضواء</option>
+              </optgroup>
+              <optgroup label="العروض">
+                <option>عرض التوفير — 15 د.ك</option>
+                <option>عرض VIP — 20 د.ك</option>
+                <option>عرض النانو — 25 د.ك</option>
+              </optgroup>
+              <optgroup label="خدمات أخرى">
+                <option>Car Spa</option>
+                <option>نانو سيراميك</option>
+                <option>غسيل المكينة</option>
+                <option>تعقيم المقصورة</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="fg">
+            <label>المنطقة</label>
+            <input type="text" id="barea" placeholder="مثال: حولي، السالمية..."/>
+          </div>
+          <div class="fg">
+            <label>ملاحظات إضافية</label>
+            <textarea id="bnotes" rows="3" placeholder="أي تفاصيل أو طلبات خاصة..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit" id="bsubmit">
+            <span id="bsubmitTxt">إرسال الطلب عبر واتساب</span>
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+          </button>
+          <div class="form-ok" id="bformOk">✅ تم إرسال طلبك! سيتم تحويلك لواتساب...</div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="footer-wave">
+    <svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,80 C300,0 900,0 1200,80 L1200,80 L0,80 Z" fill="var(--footer-bg)"/></svg>
+  </div>
+
+  <div class="footer-body">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <img src="logo.png" alt="2-WASH" class="footer-logo-img" onerror="this.outerHTML='<div class=footer-logo-txt>2-WASH</div>'"/>
+          <p>خدمة متنقلة احترافية لغسيل وتلميع السيارات في جميع مناطق الكويت منذ 2008.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/96555226675" target="_blank" class="fs-icon fs-wa">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+            </a>
+            <a href="https://instagram.com/2washkw" target="_blank" class="fs-icon fs-insta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            </a>
+        <a href="tel:65942120" class="fs-icon fs-phone">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>روابط سريعة</h4>
+          <a href="#home">الرئيسية</a>
+          <a href="#services">الخدمات</a>
+          <a href="#offers">العروض</a>
+          <a href="#pricing">الأسعار</a>
+          <a href="#about">من نحن</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>خدماتنا</h4>
+          <a href="#services">غسيل السيارات</a>
+          <a href="#services">التلميع الاحترافي</a>
+          <a href="#services">نانو سيراميك</a>
+          <a href="#services">غسيل المحرك</a>
+          <a href="#services">Car Spa</a>
+          <a href="#services">تعقيم المقصورة</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>تواصل معنا</h4>
+            <a href="tel:65942120">📞 65942120</a>
+          <a href="tel:65942120">📞 65942120</a>
+            <a href="https://wa.me/96565942120" target="_blank">💬 واتساب: 65942120</a>
+          <a href="https://instagram.com/2washkw" target="_blank">📸 @2washkw</a>
+          <span>📍 حولي — الكويت</span>
+          <span>⏰ 10ص — 12م يومياً</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 <strong>2-WASH</strong> لتلميع ووقاية السيارات — جميع الحقوق محفوظة</p>
+      <p>🇰🇼 خدمة متنقلة في جميع مناطق الكويت منذ 2008</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WA Button -->
+<a href="https://wa.me/96555226675" target="_blank" class="float-wa" aria-label="واتساب">
+  <svg viewBox="0 0 24 24" fill="currentColor" width="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+  <div class="fwa-pulse"></div>
+</a>
+
+<!-- Back to top -->
+<button class="btt" id="btt">↑</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
